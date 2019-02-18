@@ -7,7 +7,7 @@ $obj = json_decode($wheretheiss);
 $latitude = $obj->latitude;
 $longitude = $obj->longitude;
 
-$get_map_details = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?latlng=$latitude,$longitude&key=AIzaSyC7pdiKZtFp1JuNtn59YQDaeDOxtegzGbA");
+$get_map_details = file_get_contents("https://maps.googleapis.com/maps/api/geocode/json?latlng=$latitude,$longitude&key=UseAPIKey");
 //echo $get_map_details;
 $location_data = json_decode($get_map_details, true);
 
